@@ -1,18 +1,24 @@
+import { createStore } from 'redux';
+import todoApp from '../reducers';
+
 /**
- * State shape.
+ * Store state shape.
  * {
  *    visibilityFilter: 'SHOW_ALL',   
  *    todos: [
  *      {
  *        id: 1,
- *        text: 'Todo tile 1',
+ *        text: 'Todo text 1',
  *        completed: true,
  *      },
  *      {
  *        id: 2,
- *        text: 'Todo tile 2',
+ *        text: 'Todo text 2',
  *        completed: false,
  *      },
  *    ],
  * }
  */
+let store = createStore(todoApp);
+
+export default store;
