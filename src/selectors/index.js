@@ -5,10 +5,10 @@ const { SHOW_ACTIVE, SHOW_COMPLETED } = FILTERS;
 const visibleTodosTransform = (todos, filter) => {
   switch (filter) {
     case SHOW_ACTIVE:
-    return todos.filter(todo => !todo.completed);
+      return todos.filter(todo => !todo.completed);
     case SHOW_COMPLETED:
-    return todos.filter(todo => todo.completed);
-default:
+      return todos.filter(todo => todo.completed);
+    default:
       return todos;
   }
 };

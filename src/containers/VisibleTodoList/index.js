@@ -4,7 +4,7 @@ import TodoList from '../../components/TodoList';
 import { visibleTodosSelector } from '../../selectors';
 
 const mapStateToProps = state => ({
-  todos: visibleTodosSelector(state),
+  todos: visibleTodosSelector(state.present),    
 });
 
 const mapDispatchToProps = dispatch => ({
